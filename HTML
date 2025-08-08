@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combined Project - NAKKA LEELA LAKSHMI SAI RAM</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, black, orange);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      background-color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .profile-pic {
+      width: 150px;
+      border-radius: 50%;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with black and orange background -->
+  <header>
+    <h1>NAKKA LEELA LAKSHMI SAI RAM</h1>
+    <p>B-Tech ECE | Full Stack Developer | Embedded Systems</p>
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#" data-section="portfolio">Portfolio</a></li>
+      <li><a href="#" data-section="todo">To-Do List</a></li>
+      <li><a href="#" data-section="products">Products</a></li>
+    </ul>
+  </nav>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="active">
+    <img src="c:\Users\nleel\OneDrive\문서\o.jpg" alt="Profile Photo" class="profile-pic">
+
+    <div class="portfolio-container">
+      <div class="card">
+        <h3>About Me</h3>
+        <p>B-Tech ECE student at Vishnu Institute of Technology, aspiring Full Stack Developer & Embedded Systems Engineer, beginner in VLSI Verification.</p>
+      </div>
+
+      <div class="card">
+        <h3>Certificates</h3>
+        <ul>
+          <li>VITB - Failathon</li>
+          <li>ISRO - Geodata Processing using Python and Machine Learning</li>
+          <li>NPTEL - Internet of Things</li>
+          <li>Greeks for Greeks - Python Full Stack Development (SmartBridge)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Projects</h3>
+        <ul>
+          <li>Milk Store Web Application</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:nleelasairamnakka@gmail.com">nleelasairamnakka@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- To-Do List Section -->
+  <section id="todo">
+    <h1>To-Do List</h1>
+    <div class="todo-app">
+      <input type="text" id="taskInput" placeholder="Add a task">
+      <button id="addTaskBtn">Add Task</button>
+      <ul id="taskList"></ul>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products">
+    <h1>Product Listing</h1>
+    <div class="filters">
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothes">Clothes</option>
+      </select>
+
+      <select id="sortOption">
+        <option value="none">Sort By</option>
+        <option value="priceLow">Price: Low to High</option>
+        <option value="priceHigh">Price: High to Low</option>
+      </select>
+    </div>
+    <div id="productGrid" class="product-grid"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
